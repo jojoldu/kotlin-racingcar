@@ -7,9 +7,9 @@ class Race(private val cars: List<Car>) {
         cars.forEach { it.move() }
     }
 
-    val movingDistances
+    val movingDistances: List<Int>
         get() = this.cars.map { it.position }
 
-    val carsSize
+    val carsSize: Int
         get() = this.cars.size
 }

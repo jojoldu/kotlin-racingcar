@@ -13,7 +13,7 @@ class RaceGame(private val inputView: InputView, private val resultView: OutputV
 
         println("실행 결과")
 
-        repeat((0 until tryCount).count()) {
+        repeat(tryCount) {
             race.run()
             resultView.show(race.movingDistances)
         }

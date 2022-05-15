@@ -40,7 +40,7 @@ class RaceTest : DescribeSpec({
 })
 
 class StubCar : Car() {
-    override fun move(movePoint: Int) {
+    fun move(movePoint: Int) {
         super.position++
     }
 }
