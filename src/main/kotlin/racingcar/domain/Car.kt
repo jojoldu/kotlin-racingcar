@@ -17,8 +17,6 @@ class Car {
     }
 
     private fun validateMovePoint(movePoint: Int) {
-        if (movePoint > MOVE_END_POINT || movePoint < MOVE_START_POINT) {
-            throw IllegalArgumentException("$MOVE_START_POINT ~ $MOVE_END_POINT 사이의 movePoint 만 가능합니다.")
-        }
+        require(movePoint > MOVE_END_POINT || movePoint < MOVE_START_POINT) { "$MOVE_START_POINT ~ $MOVE_END_POINT 사이의 movePoint 만 가능합니다." }
     }
 }
